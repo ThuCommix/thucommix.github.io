@@ -8,7 +8,7 @@ export default function SharedLayout() {
     const element = useOutlet();
 
     const wrap = element
-        ? <Animation style={{ height: '100%' }}>
+        ? <Animation>
             {element}
         </Animation>
         : undefined;
