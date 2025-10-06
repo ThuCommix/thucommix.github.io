@@ -3,7 +3,7 @@ type SocialProps = {
     redirectUrl: string
 }
 
-export default function Social(props: SocialProps) {
+export default function Socials(props: SocialProps) {
     return (
         <img
             width='48'
