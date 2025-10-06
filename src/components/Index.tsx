@@ -1,11 +1,15 @@
 import Avatar from './Avatar'
 import Social from './Social'
-import github from '../assets/github.png'
+import githubDark from '../assets/github-dark.png'
+import githubLight from '../assets/github-light.png'
 import strava from '../assets/strava.svg'
 import Tooltip from './Tooltip'
 import Animation from './Animation'
+import { useTheme } from '../hooks/useTheme'
 
 export default function Index() {
+    const { theme } = useTheme();
+    const github = theme === 'dark' ? githubLight : githubDark;
     return (
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
