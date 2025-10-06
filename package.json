@@ -5,16 +5,14 @@
   "homepage": "https://thucommix.github.io",
   "type": "module",
   "scripts": {
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d dist",
+    "cname": "echo \"kevin-scholz.de\" >> ./dist/CNAME",
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && yarn run cname",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "framer-motion": "^12.23.22",
-    "gh-pages": "^6.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router": "^7.9.3",
