@@ -37,8 +37,6 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
 
         style.backgroundColor = tokens.background;
         style.color = tokens.foreground;
-
-        console.log(`Detected color scheme: ${theme}`);
     }, [theme]);
 
     return (
